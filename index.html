@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/516f41ef1a.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="/images/logo.png" class="logo">
+                <ul id="sideMenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closeMenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openMenu()"></i>
+            </nav>
+            <div class="header-text">
+                <h1>Coding is
+                    <span class="typer" id="main" data-colors="#ff004f, #fff" data-words="love,like Art,the Future,Everything" data-delay="100" data-deleteDelay="1000"></span>
+                    <span class="cursor" data-colors="#fff" data-owner="main" ></span>
+                  </h1>               
+                <h1>Hello, I'm <span>Nemanja</span><br>Milosevic from Serbia</h1><br>
+                <p class="backDev">Back-end developer</p>
+                <div class="banner_content text-center">
+                    <h1 id="script-font" class="clip"></h1>
+                    <div>
+            </div>
+        </div>
+    </div>
+    <!-- ----------about------------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About me</h1>
+                    <p>Hi everyone, 
+
+                        I am junior web developer from Novi Sad, Serbia. Currently available and looking for opportunities and new challenges. Improving my programming skills and acquiring new knowledge is a priority for me. New surroundings and unknown environments is something that excites me, and I find great pleasure working within a team. Reliability is something I find extremely important, because of which I am very dedicated in solving my tasks completely and in time. Respect for other people’s time as well as my own is very important to me because of which I dislike being late. 
+                        Eternal optimist.</p>
+
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Professional skills</span></li>
+                                <li>OOP</li> 
+                                <li>Java</li>   
+                                <li>Spring Boot<br></li>
+                                <li>JPA</li> 
+                                <li>Hibernate</li> 
+                                <li>Maven</li> 
+                                <li>REST API</li> 
+                                <li>Servlets</li>
+                                <li><span>Experienced with</span></li>
+                                <li>HTML5</li> 
+                                <li>CSS3</li> 
+                                <li>Javascript</li> 
+                                <li>jQuery</li> 
+                                <li>Ajax</li> 
+                                <li>Bootstrap</li>
+                                <li>React</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>Backend developer at "Nswd"</span><br>12/2021 - 09/2022</li>
+                                <li>- Developing the UI components of the software and the corresponding server-side components.</li>
+                                <li>- Using version control systems like Git to manage code changes and collaborate with team members.</li>
+                                <li>- Developing new functionality as well as maintaining the existing architecture.</li>
+                                <li>- Practice good coding techniques (reusability of code, code optimized for performance, etc.)</li>
+                                <li>- Continuously improving knowledge and skills, keeping up-to-date with modern technologies.</li>
+                                <li>- Collaborate with cross-functional teams for development and integrations.</li>
+
+                                <li><span>On the music scene</span><br>2011 - present(part-time job)</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>Java Web Development course FTN Informatika</span><br>The aim of the course was to introduce students to web technologies and the implementation of web-based applications. I learned to program web applications in Java, using Servlets, MySQL, Spring Boot, React and Bootstrap. Also we implemented Spring security and we secured applications from both backend and frontend sides.</li>
+                                <li><span>Java Basic Programming course FTN Informatika</span><br>Introduction with Eclipse development environment, learning basics of object oriented programming, get knowing the basics of Java syntax.</li>
+                                <li><span>University of Novi Sad, Tourism and Travel Services Management</span><br></li>
+                            </ul>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- -------------portfolio------------ -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.jpg">
+                <div class="layer">
+                    <h3>Secret Santa App</h3>
+                    <p>Application is based on HTML, CSS, JAVASCRIPT, NODE.JS, MongoDB</p>
+                    <a href="https://test-secretsanta-dot-deductive-span-313911.ey.r.appspot.com/session/login" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-2.jpg" alt="">
+                <div class="layer">
+                    <h3>Bus App</h3>
+                    <p>Application is based on SpringBoot, REST
+                        API, React, Redux, Bootstrap and MySQL</p>
+                    <a href="https://github.com/nemanja777/bus-station" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-3.jpg" alt="">
+                <div class="layer">
+                    <h3>BuyOrSell App</h3>
+                    <p>Application is based on HTML, CSS, C#, JAVASCRIPT</p>
+                    <a href="https://github.com/nemanja777/BuyOrSell" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ----------------------------contact---------------------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>milosevic93@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>+381 62 32 45 32</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/nemanjamilosevicc/"  target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/nemanja777"  target="_blank"><i class="fa-brands fa-github"></i></a>
+                    <a href= "https://www.instagram.com/nemanjamilosevicdj/" target="_blank"><i class="fa-brands fa-instagram"></i></a>              
+                </div>
+                <a href="images/Nemanja Milosevic CV.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+                <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-caret-up"></i></button>
+            </div>
+        </div>
+    </div>
+      <div class="copyright text-center">
+        <p>&copy; Copyright 2024 | All Rights Reserved</p>
+      </div>
+</div>
+
+<script>
+    // Get the button
+    let mybutton = document.getElementById("myBtn");
+    
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+    
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+    
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+    </script>
+
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+        
+
+    </script>
+
+    <script>
+        var sideMenu = document.getElementById("sideMenu");
+
+        function openMenu(){
+            sideMenu.style.right = "0";
+        }
+
+        function closeMenu(){
+            sideMenu.style.right = "-200px";
+        }
+
+    </script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxqWNmfafMTMwxNmoaOC4oiDbIcGYLLOymdttZ9S0UgErCrttWSv98TLgiPGDFAIzgESg/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            }, 5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+ 
+   <!-- JavaScript Libraries -->
+   <script async src="https://unpkg.com/typer-dot-js@0.1.0/typer.js"></script>
+   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    
+</body>
+</html>
